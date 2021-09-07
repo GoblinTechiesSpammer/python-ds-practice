@@ -7,3 +7,11 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    letterFreq = {}
+    for letter in phrase:
+        if letter not in letterFreq:
+            letterFreq[letter] = 1
+        else:
+            letterFreq[letter] += 1
+    
+    return letterFreq
