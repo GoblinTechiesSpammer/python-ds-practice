@@ -10,6 +10,8 @@ def same_frequency(num1, num2):
         >>> same_frequency(1212, 2211)
         True
     """
+    # I dont know why integers are not that operatable upon when they could easily be.
+
     if len(str(num1)) < len(str(num2)):
         return False
 
